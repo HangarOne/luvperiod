@@ -28,6 +28,9 @@ gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) support
 gem "twitter-bootstrap-rails"
 gem "haml-rails"
 
+gem 'rails_serve_static_assets'
+gem 'rails_stdout_logging'
+
 gem 'rails_12factor', group: :production
 
 
