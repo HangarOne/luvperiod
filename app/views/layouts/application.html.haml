@@ -34,11 +34,11 @@
       %p.lead a work in progress
       %p #dreamer #bebold #almostthere
     .formbox.col-md-6.col-md-offset-3
-      %form{:role => "form"}
+      = form_tag email_path, :method => :get do
         .row
           .col-xs-12
             .input-group.input-group-lg
-              %input.form-control{:placeholder => "Enter email and we will notify you on launch", :type => "text"}/
+              = text_field_tag :email, params[:search], :placeholder => "Enter email and we will notify you on launch", :class => "form-control"
               .input-group-btn
                 %button.btn.btn-black{:type => "submit"} submit
 

@@ -2,7 +2,12 @@ class HomeController < ApplicationController
   require 'mandrill'
   
   def index
-    m = Mandrill::API.new("QIgR39zZpAEqcMbtgjDDYw") # All official Mandrill API clients will automatically pull your API key from the environment
-    UserMailer.welcome_email.deliver
+    #m = Mandrill::API.new("QIgR39zZpAEqcMbtgjDDYw")
+  end
+  
+  def email
+    #raise params[:email].to_yaml
+    UserMailer.welcome_email(params[:email]).deliver
+    redirect_to :root
   end
 end
