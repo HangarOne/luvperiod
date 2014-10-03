@@ -44,7 +44,9 @@
 
     .row
       .col-md-6.col-md-offset-3.social
-        %a{:href => "https://www.facebook.com/pages/Luv-Period/1487905611486461"}
+        %a{:href => "https://www.facebook.com/pages/Luv-Period/1487905611486461", :target => "_blank"}
           .col-md-4.fb
-        .col-md-4.twitter
-        .col-md-4.mail
+        %a{:href => "https://twitter.com/", :target => "_blank"}
+          .col-md-4.twitter
+        = mail_to "info@luvperiod.ca"
+          .col-md-4.mail
