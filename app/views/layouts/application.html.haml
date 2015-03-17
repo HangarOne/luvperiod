@@ -26,27 +26,4 @@
       %script{:src=>"https://oss.maxcdn.com/respond/1.4.2/respond.min.js"}
   %body
     .container
-      .starter-template
-        %h1 Love Unconditionally Veraciously Period
-        .divider
-        %h1.huge #Luv.
-    .tagline
-      %p.lead a work in progress
-      %p #dreamer #bebold #almostthere
-    .formbox.col-md-6.col-md-offset-3
-      = form_tag email_path, :method => :get do
-        .row
-          .col-xs-12
-            .input-group.input-group-lg
-              = text_field_tag :email, params[:search], :placeholder => "Enter email and we will notify you on launch", :class => "form-control"
-              .input-group-btn
-                %button.btn.btn-black{:type => "submit"} submit
-
-    .row
-      .col-md-6.col-md-offset-3.social
-        %a{:href => "https://www.facebook.com/pages/Luv-Period/1487905611486461", :target => "_blank"}
-          .col-md-4.fb
-        %a{:href => "https://twitter.com/", :target => "_blank"}
-          .col-md-4.twitter
-        %a{:href => "mailto:info@luvperiod.ca"}
-          .col-md-4.mail
+      = yield

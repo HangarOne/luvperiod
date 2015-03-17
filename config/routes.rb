@@ -7,6 +7,8 @@ Rails.application.routes.draw do
   
   
   get 'email', to: 'home#email'
+  
+  get 'charity', to: 'home#charity'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

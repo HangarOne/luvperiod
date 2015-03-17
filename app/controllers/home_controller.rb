@@ -10,4 +10,10 @@ class HomeController < ApplicationController
     UserMailer.welcome_email(params[:email]).deliver
     redirect_to :root
   end
+  
+  def charity
+    
+  end
+  
+  
 end
